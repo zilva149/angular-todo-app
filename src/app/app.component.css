@@ -1,3 +1,7 @@
+.todo-app {
+  min-width: 80rem;
+}
+
 .header {
   margin-bottom: 4rem;
 }
@@ -9,4 +13,8 @@
 
 .cockpit-container {
   margin-bottom: 4rem;
+}
+
+.todo-list {
+  width: 100%;
 }
