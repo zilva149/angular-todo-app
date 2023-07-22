@@ -3,7 +3,7 @@
     <h1 class="header-heading">Todo app</h1>
   </header>
   <div class="cockpit-container">
-    <app-cockpit></app-cockpit>
+    <app-cockpit (onAddTodo)="addTodo($event)"></app-cockpit>
   </div>
   <div class="todo-list">
     <app-todo-item></app-todo-item>
