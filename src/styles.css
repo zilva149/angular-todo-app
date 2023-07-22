@@ -1,1 +1,87 @@
-/* You can add global styles to this file, and also import other style files */
+/* CSS RESET */
+
+:root {
+  --bg-primary: #dde3e6;
+  --bg-lprimary: #f1f1f1;
+  --bg-secondary: #738b9b;
+  --bg-lsecondary: #a0afb7;
+  --red: #fc6464;
+  --lred: rgb(240, 125, 125);
+  --transition: all ease-out 0.3s;
+}
+
+body,
+body *,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  min-height: 100vh;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-primary);
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.6rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+
+.btn {
+  height: 60px;
+  cursor: pointer;
+  border: solid 1px var(--bg-lprimary);
+  font-size: 1.8rem;
+  color: var(--bg-secondary);
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background-color: var(--bg-lsecondary);
+  color: #fff;
+}
+
+.btn:active {
+  transform: translateY(2px);
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 8px;
+  }
+}
