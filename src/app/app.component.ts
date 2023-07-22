@@ -11,6 +11,6 @@ export class AppComponent {
   constructor(private todoService: TodoService) {}
 
   addTodo(todo: TodoItem) {
-    this.todoService.addTodo(todo);
+    this.todoService.saveTodo(todo);
   }
 }

@@ -9,7 +9,7 @@ export class TodoService {
 
   constructor() {}
 
-  addTodo(todo: TodoItem) {
+  saveTodo(todo: TodoItem) {
     this.todoList.push(todo);
     console.log(this.todoList);
   }
